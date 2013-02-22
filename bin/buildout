@@ -1,0 +1,12 @@
+#!/Users/davi/.pythonenvs/py27/bin/python
+
+import sys
+sys.path[0:0] = [
+  '/Users/davi/.buildout/eggs/zc.buildout-1.4.4-py2.7.egg',
+  '/Users/davi/.buildout/eggs/distribute-0.6.28-py2.7.egg',
+  ]
+
+import zc.buildout.buildout
+
+if __name__ == '__main__':
+    sys.exit(zc.buildout.buildout.main())
